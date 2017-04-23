@@ -15,7 +15,7 @@ pipeline {
     stage("Build Image"){
 	    steps {
 	        sh "cp my_config .config"
-	        sh "yes "" 2>/dev/null | make oldconfig"
+	        sh "yes '' 2>/dev/null | make oldconfig"
 	        sh "make -j4"
     }}
   }
