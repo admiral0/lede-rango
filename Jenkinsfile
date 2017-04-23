@@ -14,7 +14,7 @@ pipeline {
     }}
     stage("Build Image"){
 	    steps {
-	        sh "yes '' 2>/dev/null | make oldconfig"
+	        sh "make defconfig"
 	        sh "make -j4"
     }}
   }
@@ -23,7 +23,7 @@ pipeline {
           sh "git remote add githubssh git@github.com:admiral0/lede-rango.git || true"
           sh "git fetch githubssh"
           sh "git push githubssh build:master"
-	  sh "rsync -avh --delete bin/* /srv/http/lede/"
+	  sh "rsync -avh --delete bin/* /srv/http/lede/jenkins"
       }
   }
 }
