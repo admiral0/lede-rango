@@ -1,0 +1,249 @@
+CONFIG_TARGET_mvebu=y
+CONFIG_TARGET_MULTI_PROFILE=y
+CONFIG_TARGET_DEVICE_mvebu_DEVICE_linksys-wrt1200ac=y
+CONFIG_TARGET_DEVICE_mvebu_DEVICE_linksys-wrt1200ac=y
+CONFIG_TARGET_DEVICE_mvebu_DEVICE_linksys-wrt1900ac=y
+CONFIG_TARGET_DEVICE_mvebu_DEVICE_linksys-wrt1900acs=y
+CONFIG_TARGET_DEVICE_mvebu_DEVICE_linksys-wrt1900acv2=y
+CONFIG_TARGET_DEVICE_mvebu_DEVICE_linksys-wrt3200acm=y
+CONFIG_ALL_KMODS=y
+# CONFIG_BIND_ENABLE_FILTER_AAAA is not set
+CONFIG_BUILD_NLS=y
+CONFIG_GNUTLS_CRYPTODEV=y
+CONFIG_IMAGEOPT=y
+# CONFIG_IWL1000_FW is not set
+# CONFIG_IWL100_FW is not set
+# CONFIG_IWL105_FW is not set
+# CONFIG_IWL135_FW is not set
+# CONFIG_IWL2000_FW is not set
+# CONFIG_IWL2030_FW is not set
+# CONFIG_IWL3160_FW is not set
+# CONFIG_IWL5000_FW is not set
+# CONFIG_IWL5150_FW is not set
+# CONFIG_IWL6000_FW is not set
+# CONFIG_IWL6005_FW is not set
+# CONFIG_IWL6030_FW is not set
+# CONFIG_IWL6050_FW is not set
+# CONFIG_IWL7260_FW is not set
+# CONFIG_IWL7265_FW is not set
+# CONFIG_IWL8000_FW is not set
+# CONFIG_KMOD_BATMAN_ADV_BLA is not set
+CONFIG_KMOD_BATMAN_ADV_DEBUG_LOG=y
+CONFIG_KMOD_BATMAN_ADV_NC=y
+CONFIG_NGINX_HTTP_AUTH_REQUEST=y
+CONFIG_NGINX_HTTP_V2=y
+CONFIG_NGINX_SSL=y
+CONFIG_OPENSSL_HARDWARE_SUPPORT=y
+CONFIG_OPENSSL_WITH_SSL3=y
+# CONFIG_PACKAGE_ath10k-firmware-qca6174 is not set
+# CONFIG_PACKAGE_ath10k-firmware-qca9887 is not set
+# CONFIG_PACKAGE_ath10k-firmware-qca9887-ct is not set
+# CONFIG_PACKAGE_ath10k-firmware-qca988x is not set
+# CONFIG_PACKAGE_ath10k-firmware-qca988x-ct is not set
+# CONFIG_PACKAGE_ath10k-firmware-qca9984 is not set
+# CONFIG_PACKAGE_ath10k-firmware-qca9984-ct is not set
+# CONFIG_PACKAGE_ath10k-firmware-qca99x0 is not set
+# CONFIG_PACKAGE_ath10k-firmware-qca99x0-ct is not set
+CONFIG_PACKAGE_block-mount=y
+CONFIG_PACKAGE_boost-locale=m
+# CONFIG_PACKAGE_brcmfmac-firmware-4329-sdio is not set
+# CONFIG_PACKAGE_brcmfmac-firmware-43362-sdio is not set
+# CONFIG_PACKAGE_brcmfmac-firmware-43430-sdio is not set
+# CONFIG_PACKAGE_brcmfmac-firmware-43602a1-pcie is not set
+# CONFIG_PACKAGE_brcmfmac-firmware-4366b1-pcie is not set
+# CONFIG_PACKAGE_brcmsmac-firmware is not set
+CONFIG_PACKAGE_ca-bundle=y
+CONFIG_PACKAGE_ca-certificates=y
+CONFIG_PACKAGE_collectd=y
+CONFIG_PACKAGE_collectd-mod-cpu=y
+CONFIG_PACKAGE_collectd-mod-interface=y
+CONFIG_PACKAGE_collectd-mod-iwinfo=y
+CONFIG_PACKAGE_collectd-mod-load=y
+CONFIG_PACKAGE_collectd-mod-memory=y
+CONFIG_PACKAGE_collectd-mod-network=y
+CONFIG_PACKAGE_collectd-mod-rrdtool=y
+CONFIG_PACKAGE_curl=y
+CONFIG_PACKAGE_ddns-scripts=y
+CONFIG_PACKAGE_ddns-scripts_no-ip_com=y
+# CONFIG_PACKAGE_ddns-scripts_nsupdate is not set
+CONFIG_PACKAGE_dmesg=y
+# CONFIG_PACKAGE_ibt-firmware is not set
+CONFIG_PACKAGE_iotivity_SECURE=y
+CONFIG_PACKAGE_iperf=y
+CONFIG_PACKAGE_iperf3=y
+CONFIG_PACKAGE_iptables-mod-conntrack-extra=y
+CONFIG_PACKAGE_iptables-mod-ipopt=y
+# CONFIG_PACKAGE_kmod-3c59x is not set
+# CONFIG_PACKAGE_kmod-8139cp is not set
+# CONFIG_PACKAGE_kmod-8139too is not set
+# CONFIG_PACKAGE_kmod-atl1 is not set
+# CONFIG_PACKAGE_kmod-atl1c is not set
+# CONFIG_PACKAGE_kmod-atl1e is not set
+# CONFIG_PACKAGE_kmod-atl2 is not set
+# CONFIG_PACKAGE_kmod-b44 is not set
+CONFIG_PACKAGE_kmod-bonding=y
+CONFIG_PACKAGE_kmod-crypto-aead=y
+CONFIG_PACKAGE_kmod-crypto-authenc=y
+CONFIG_PACKAGE_kmod-crypto-crc32c=y
+CONFIG_PACKAGE_kmod-crypto-hash=y
+CONFIG_PACKAGE_kmod-crypto-hmac=y
+CONFIG_PACKAGE_kmod-crypto-manager=y
+CONFIG_PACKAGE_kmod-crypto-md5=y
+CONFIG_PACKAGE_kmod-crypto-null=y
+CONFIG_PACKAGE_kmod-crypto-pcompress=y
+CONFIG_PACKAGE_kmod-crypto-sha1=y
+CONFIG_PACKAGE_kmod-crypto-sha256=y
+CONFIG_PACKAGE_kmod-crypto-sha512=y
+CONFIG_PACKAGE_kmod-cryptodev=y
+# CONFIG_PACKAGE_kmod-dm9000 is not set
+# CONFIG_PACKAGE_kmod-e100 is not set
+# CONFIG_PACKAGE_kmod-e1000 is not set
+# CONFIG_PACKAGE_kmod-e1000e is not set
+# CONFIG_PACKAGE_kmod-et131x is not set
+# CONFIG_PACKAGE_kmod-forcedeth is not set
+CONFIG_PACKAGE_kmod-fs-ext4=y
+CONFIG_PACKAGE_kmod-fs-msdos=y
+CONFIG_PACKAGE_kmod-fs-vfat=y
+# CONFIG_PACKAGE_kmod-gigaset is not set
+# CONFIG_PACKAGE_kmod-hfcmulti is not set
+# CONFIG_PACKAGE_kmod-hfcpci is not set
+CONFIG_PACKAGE_kmod-hwmon-core=y
+CONFIG_PACKAGE_kmod-hwmon-pwmfan=y
+CONFIG_PACKAGE_kmod-ifb=y
+# CONFIG_PACKAGE_kmod-igb is not set
+CONFIG_PACKAGE_kmod-ipt-conntrack-extra=y
+CONFIG_PACKAGE_kmod-ipt-ipopt=y
+CONFIG_PACKAGE_kmod-ipt-ipsec=y
+CONFIG_PACKAGE_kmod-lib-crc16=y
+CONFIG_PACKAGE_kmod-lib-textsearch=y
+# CONFIG_PACKAGE_kmod-natsemi is not set
+# CONFIG_PACKAGE_kmod-ne2k-pci is not set
+CONFIG_PACKAGE_kmod-nf-nathelper-extra=y
+CONFIG_PACKAGE_kmod-nls-base=y
+CONFIG_PACKAGE_kmod-nls-cp437=y
+CONFIG_PACKAGE_kmod-nls-iso8859-1=y
+CONFIG_PACKAGE_kmod-nls-utf8=y
+# CONFIG_PACKAGE_kmod-of-mdio is not set
+# CONFIG_PACKAGE_kmod-pcnet32 is not set
+# CONFIG_PACKAGE_kmod-phy-broadcom is not set
+# CONFIG_PACKAGE_kmod-ppfe is not set
+# CONFIG_PACKAGE_kmod-r6040 is not set
+# CONFIG_PACKAGE_kmod-r8169 is not set
+CONFIG_PACKAGE_kmod-sched=y
+CONFIG_PACKAGE_kmod-sched-cake=y
+CONFIG_PACKAGE_kmod-sched-connmark=y
+CONFIG_PACKAGE_kmod-sched-core=y
+CONFIG_PACKAGE_kmod-scsi-core=y
+# CONFIG_PACKAGE_kmod-sis190 is not set
+# CONFIG_PACKAGE_kmod-sis900 is not set
+# CONFIG_PACKAGE_kmod-skge is not set
+# CONFIG_PACKAGE_kmod-sky2 is not set
+# CONFIG_PACKAGE_kmod-spi-ks8995 is not set
+# CONFIG_PACKAGE_kmod-switch-rtl8366-smi is not set
+# CONFIG_PACKAGE_kmod-switch-rtl8366rb is not set
+# CONFIG_PACKAGE_kmod-switch-rtl8366s is not set
+# CONFIG_PACKAGE_kmod-switch-rtl8367b is not set
+CONFIG_PACKAGE_kmod-tun=y
+CONFIG_PACKAGE_kmod-usb-core=y
+CONFIG_PACKAGE_kmod-usb-ehci=y
+CONFIG_PACKAGE_kmod-usb-ohci=y
+CONFIG_PACKAGE_kmod-usb-ohci-pci=y
+CONFIG_PACKAGE_kmod-usb-storage=y
+CONFIG_PACKAGE_kmod-usb-storage-extras=y
+CONFIG_PACKAGE_kmod-usb-uhci=y
+CONFIG_PACKAGE_kmod-usb2=y
+CONFIG_PACKAGE_kmod-usb2-pci=y
+CONFIG_PACKAGE_kmod-usb3=y
+CONFIG_PACKAGE_libcurl=y
+CONFIG_PACKAGE_libiwinfo=y
+CONFIG_PACKAGE_libiwinfo-lua=y
+CONFIG_PACKAGE_libltdl=y
+CONFIG_PACKAGE_liblua=y
+CONFIG_PACKAGE_liblzo=y
+CONFIG_PACKAGE_libmbedtls=y
+CONFIG_PACKAGE_libncurses=y
+CONFIG_PACKAGE_libnetsnmp=y
+CONFIG_PACKAGE_libopenssl=y
+CONFIG_PACKAGE_libpcap=y
+CONFIG_PACKAGE_libpcre=y
+CONFIG_PACKAGE_librrd1=y
+CONFIG_PACKAGE_librt=y
+CONFIG_PACKAGE_libsensors=y
+CONFIG_PACKAGE_libsysfs=y
+CONFIG_PACKAGE_libubus-lua=y
+CONFIG_PACKAGE_libuci-lua=y
+CONFIG_PACKAGE_libustream-openssl=y
+CONFIG_PACKAGE_libuuid=y
+CONFIG_PACKAGE_lm-sensors=y
+CONFIG_PACKAGE_lua=y
+CONFIG_PACKAGE_luci=y
+CONFIG_PACKAGE_luci-app-ddns=y
+CONFIG_PACKAGE_luci-app-firewall=y
+CONFIG_PACKAGE_luci-app-openvpn=y
+CONFIG_PACKAGE_luci-app-qos=y
+CONFIG_PACKAGE_luci-app-samba=y
+CONFIG_PACKAGE_luci-app-sqm=y
+CONFIG_PACKAGE_luci-app-statistics=y
+CONFIG_PACKAGE_luci-app-upnp=y
+CONFIG_PACKAGE_luci-base=y
+CONFIG_PACKAGE_luci-lib-ip=y
+CONFIG_PACKAGE_luci-lib-jsonc=y
+CONFIG_PACKAGE_luci-lib-nixio=y
+CONFIG_PACKAGE_luci-mod-admin-full=y
+CONFIG_PACKAGE_luci-proto-ipv6=y
+CONFIG_PACKAGE_luci-proto-ppp=y
+CONFIG_PACKAGE_luci-theme-bootstrap=y
+CONFIG_PACKAGE_luci-theme-material=y
+CONFIG_PACKAGE_miniupnpd=y
+CONFIG_PACKAGE_openssl-util=y
+CONFIG_PACKAGE_openvpn-easy-rsa=y
+# CONFIG_PACKAGE_openvpn-nossl is not set
+CONFIG_PACKAGE_openvpn-openssl=y
+CONFIG_PACKAGE_procps-ng=y
+CONFIG_PACKAGE_procps-ng-pmap=y
+CONFIG_PACKAGE_procps-ng-ps=y
+CONFIG_PACKAGE_procps-ng-pwdx=y
+CONFIG_PACKAGE_procps-ng-slabtop=y
+CONFIG_PACKAGE_procps-ng-snice=y
+CONFIG_PACKAGE_procps-ng-tload=y
+CONFIG_PACKAGE_procps-ng-vmstat=y
+CONFIG_PACKAGE_procps-ng-watch=y
+CONFIG_PACKAGE_qos-scripts=y
+CONFIG_PACKAGE_rpcd=y
+CONFIG_PACKAGE_rrdtool1=y
+# CONFIG_PACKAGE_rtl8188eu-firmware is not set
+CONFIG_PACKAGE_samba36-server=y
+CONFIG_PACKAGE_snmpd=y
+CONFIG_PACKAGE_sqm-scripts=y
+CONFIG_PACKAGE_sysfsutils=y
+CONFIG_PACKAGE_sysstat=y
+CONFIG_PACKAGE_tc=y
+CONFIG_PACKAGE_tcpdump=y
+CONFIG_PACKAGE_terminfo=y
+CONFIG_PACKAGE_uclibcxx=y
+CONFIG_PACKAGE_uhttpd=y
+CONFIG_PACKAGE_uhttpd-mod-ubus=y
+CONFIG_PACKAGE_wget=y
+CONFIG_PACKAGE_zlib=y
+CONFIG_VERSIONOPT=y
+CONFIG_VERSION_BUG_URL=""
+CONFIG_VERSION_CODE=""
+CONFIG_VERSION_DIST="Lede"
+CONFIG_VERSION_HWREV=""
+CONFIG_VERSION_MANUFACTURER="Linksys"
+CONFIG_VERSION_MANUFACTURER_URL=""
+CONFIG_VERSION_NICK=""
+CONFIG_VERSION_NUMBER=""
+CONFIG_VERSION_PRODUCT=""
+CONFIG_VERSION_REPO="http://lede.admiral0.it/jenkins/targets/mvebu/generic/packages"
+CONFIG_VERSION_SUPPORT_URL=""
+CONFIG_PACKAGE_procps-ng-free=m
+CONFIG_PACKAGE_procps-ng-kill=m
+CONFIG_PACKAGE_procps-ng-pgrep=m
+CONFIG_PACKAGE_procps-ng-pkill=m
+CONFIG_PACKAGE_procps-ng-skill=m
+CONFIG_PACKAGE_procps-ng-top=m
+CONFIG_PACKAGE_procps-ng-uptime=m
+CONFIG_PACKAGE_procps-ng-w=m
+# CONFIG_VERSION_CODE_FILENAMES is not set
+# CONFIG_VERSION_FILENAMES is not set
