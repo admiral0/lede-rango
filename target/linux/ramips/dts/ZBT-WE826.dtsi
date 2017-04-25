@@ -1,21 +1,27 @@
-#include "mt7621.dtsi"
+/dts-v1/;
 
-#include <dt-bindings/gpio/gpio.h>
+#include "mt7620a.dtsi"
+
 #include <dt-bindings/input/input.h>
 
 / {
-	memory@0 {
-		device_type = "memory";
-		reg = <0x0 0x1c000000>, <0x20000000 0x4000000>;
-	};
-
 	chosen {
 		bootargs = "console=ttyS0,115200";
 	};
 
-	palmbus: palmbus@1E000000 {
-		i2c@900 {
-			status = "okay";
+	gpio-leds {
+		compatible = "gpio-leds";
+		power {
+			label = "zbt-we826:green:power";
+			gpios = <&gpio1 14 0>;
+		};
+		usb {
+			label = "zbt-we826:green:usb";
+			gpios = <&gpio1 15 0>;
+		};
+		air {
+			label = "zbt-we826:green:wifi";
+			gpios = <&gpio3 0 1>;
 		};
 	};
 
@@ -24,38 +30,35 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		poll-interval = <20>;
-
 		reset {
 			label = "reset";
-			gpios = <&gpio0 18 GPIO_ACTIVE_LOW>;
+			gpios = <&gpio0 1 1>;
 			linux,code = <KEY_RESTART>;
-		};
-	};
-
-	gpio-leds {
-		compatible = "gpio-leds";
-
-		status {
-			label = "zbt-wg3526:green:status";
-			gpios = <&gpio0 24 1>;
 		};
 	};
 };
 
-&sdhci {
+&gpio0 {
+	status = "okay";
+};
+
+&gpio1 {
+	status = "okay";
+};
+
+&gpio3 {
 	status = "okay";
 };
 
 &spi0 {
 	status = "okay";
 
-	m25p80@0 {
+	en25q128@0 {
 		#address-cells = <1>;
 		#size-cells = <1>;
 		compatible = "jedec,spi-nor";
 		reg = <0>;
 		spi-max-frequency = <10000000>;
-		m25p,chunked-io = <32>;
 
 		partition@0 {
 			label = "u-boot";
@@ -81,36 +84,36 @@
 	};
 };
 
-&pcie {
+&sdhci {
 	status = "okay";
+};
 
-	pcie0 {
-		wifi@14c3,7603 {
-			compatible = "pci14c3,7603";
-			reg = <0x0000 0 0 0 0>;
-			mediatek,mtd-eeprom = <&factory 0x0000>;
-		};
-	};
+&ehci {
+	status = "okay";
+};
 
-	pcie1 {
-		wifi@14c3,7662 {
-			compatible = "pci14c3,7662";
-			reg = <0x0000 0 0 0 0>;
-			mediatek,mtd-eeprom = <&factory 0x8000>;
-			ieee80211-freq-limit = <5000000 6000000>;
-		};
-	};
+&ohci {
+	status = "okay";
 };
 
 &ethernet {
-	mtd-mac-address = <&factory 0xe000>;
+	mtd-mac-address = <&factory 0x4>;
+	mediatek,portmap = "wllll";
+};
+
+&wmac {
+	ralink,mtd-eeprom = <&factory 0>;
 };
 
 &pinctrl {
 	state_default: pinctrl0 {
-		gpio {
-			ralink,group = "wdt", "rgmii2", "wdt rst", "jtag", "mdio";
+		default {
+			ralink,group = "i2c", "uartf", "wled", "spi refclk", "pa";
 			ralink,function = "gpio";
 		};
 	};
+};
+
+&pcie {
+	status = "okay";
 };
